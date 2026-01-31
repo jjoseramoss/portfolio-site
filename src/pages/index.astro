@@ -1,7 +1,10 @@
 ---
-import Button from "../components/Button.tsx";
 import "../styles/global.css";
-
+import Navbar from "../components/Navbar.tsx";
+import TechSkills from "../components/TechSkills.tsx";
+import WorkExperience from "../components/WorkExperience.tsx";
+import Projects from "../components/Projects";
+import Footer from "../components/Footer"
 ---
 
 <html lang="en">
@@ -14,10 +17,57 @@ import "../styles/global.css";
     <title>Jose's Portfolio</title>
   </head>
   <body>
-	
-    <main>
-      <h1 class="">Jose's Portfolio</h1>
-      <Button client:load />
+    <Navbar />
+    <main class="min-h-screen px-8 py-20">
+      <!-- Main Section: Section where I introduce myself and my roles -->
+      <div class="max-w-4xl mx-auto flex flex-col gap-12">
+        <section class="flex flex-col">
+          <p class="text-2xl md:text-2xl mb-4">Hello! I'm</p>
+
+          <h1
+            class="text-5xl md:text-6xl font-bold leading-tight tracking-tighter"
+          >
+            Jose Martin Ramos Jr.
+          </h1>
+
+          <p class="text-3xl md:text-3xl mt-3 mb-10">
+            A Student at <span class="text-orange-600">UTRGV</span>
+          </p>
+
+          <section class="flex flex-col gap-6">
+            <p class="text-xl md:text-xl text-gray-300">I'm also a</p>
+
+            <ul class="text-lg md:text-xl font-medium space-y-4">
+              <li class="text-[#6cf284]">Web Development Student Assistant</li>
+              <li class="text-[#66d9ef]">DSAA Club President</li>
+              <li class="text-[#da93f4]">Fullstack Developer</li>
+              <li class="text-[#f4c98a]">One Piece Enthusiast 🏴‍☠️</li>
+            </ul>
+          </section>
+
+          <section class="mt-4">
+            <!-- Links to blog / github / linkedIn -->
+          </section>
+        </section>
+
+        <!-- Tech Skills -->
+        <TechSkills client:load />
+
+        <!-- Experiences -->
+        <WorkExperience client:load />
+
+        <!-- Projects -->
+        <Projects client:load/>
+        <!-- Clubs -->
+
+       <!-- Call to Action -->
+        <section class="mt-4 flex flex-col justify-center items-center">
+          <p class="text-xl font-bold text-gray-300 pb-3">Want to Chat?</p>
+          <p class="text-gray-400 text-center">Chat with me via email at <span><a class="font-bold underline decoration-dotted" href="mailto:josemramos.tech@gmail.com">josemramos.tech@gmail.com</a></span></p>
+        </section>
+      </div>
     </main>
+     <!-- Footer -->
+    <Footer />
   </body>
 </html>

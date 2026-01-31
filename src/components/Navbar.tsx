@@ -11,13 +11,10 @@ const Navbar = () => {
         </div>
 
 
-
-
         {/* Navbar Controls: Blog Page(Future Feature), Accessibility Feature  */}
         <div className="flex">
             <ul className="flex gap-4 items-center">
-                <li>Blog</li>
-                <li>Resume</li>
+                <li className="text-orange-600 hover:text-orange-5  00 transition hover:underline font-semibold"><a href="/pdfs/jose-resume-2026-swe-internship.pdf">Resume</a></li>
             </ul>
         </div>
     </div>
