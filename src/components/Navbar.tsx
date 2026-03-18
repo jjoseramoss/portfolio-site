@@ -16,7 +16,7 @@ const Navbar = () => {
         {/* Navbar Controls: Blog Page(Future Feature), Accessibility Feature  */}
         <div className="flex">
             <ul className="flex gap-4 items-center">
-                <li className="text-orange-600 hover:text-orange-5  00 transition hover:underline font-semibold"><a href="/pdfs/jose-resume-2026-swe-internship.pdf">Resume</a></li>
+                <li className="text-orange-600 hover:text-orange-5  00 transition hover:underline font-semibold"><a href="/pdfs/jose-ramos-resume-2026.pdf">Resume</a></li>
             </ul>
         </div>
     </div>

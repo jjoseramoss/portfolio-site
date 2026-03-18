@@ -32,7 +32,7 @@ const Footer = () => {
             href="/"
             className="text-2xl md:text-3xl font-bold text-white hover:text-orange-600 transition-colors duration-300"
           >
-            josemramos.com
+            josemramosjr.com
           </a>
         </div>
 
@@ -57,7 +57,7 @@ const Footer = () => {
         {/* Resume Link */}
         <div className="text-center mb-6">
           <a
-            href="/pdfs/jose-resume-2026-swe-internship.pdf"
+            href="/pdfs/jose-ramos-resume-2026.pdf"
             className="inline-block px-6 py-2 border border-orange-600 text-orange-600 font-semibold rounded-lg hover:bg-orange-600 hover:text-[#2B2B2B] transition-all duration-300"
           >
             Resume
